@@ -31,7 +31,7 @@ const nextSlide = (params) => {
         activeSlideIndex * sliderHeight 
     }px)`
 
-    slidLeft.style.transform = `translateY(-${
+    slidLeft.style.transform = `translateY(${
         activeSlideIndex * sliderHeight 
     }px)`}
 
