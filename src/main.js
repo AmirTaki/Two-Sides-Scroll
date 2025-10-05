@@ -12,30 +12,29 @@ slidLeft.style.top = `-${(sliderLenght - 1) * 100}vh`
 
 
 const nextSlide = (params) => {
+
     const sliderHeight =  sliderContainer.clientHeight;
 
     if(params === "up") {
-        activeSlideIndex ++;
+        activeSlideIndex++;
         if(activeSlideIndex > sliderLenght - 1){
             activeSlideIndex = 0
         }
-        if (params === 'down'){
-            activeSlideIndex --;
-            if(activeSlideIndex < 0){
-                activeSlideIndex = sliderLenght - 1
-            }
+    }
+    if (params === 'down'){
+        activeSlideIndex--;
+        if(activeSlideIndex < 0){
+            activeSlideIndex = sliderLenght - 1
         }
     }
+    
 
-    slidRight.style.transform = `translateY(-${
-        activeSlideIndex * sliderHeight 
-    }px)`
+    slidRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight }px)`
 
-    slidLeft.style.transform = `translateY(${
-        activeSlideIndex * sliderHeight 
-    }px)`}
+    slidLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
 
+}
 downButton.addEventListener("click", () => nextSlide ('up'))
-upButton.addEventListener("click", () => nextSlide ('down'))
+upButton.addEventListener("click", () => nextSlide('down'))
 
 
