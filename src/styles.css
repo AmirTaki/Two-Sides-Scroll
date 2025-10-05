@@ -4,3 +4,11 @@
     box-sizing: border-box;
 }
 
+
+
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    width: 10vw;
+    height: 100vh;
+}
