@@ -73,3 +73,7 @@ button {
 #up-btn {
     transform: translateY(-100%);
 }
+
+.game-one {
+    background-color: #1d1815;
+}
