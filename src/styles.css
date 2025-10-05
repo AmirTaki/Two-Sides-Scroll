@@ -50,3 +50,9 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.buttons-container button {
+    position: absolute;
+    left: 35%;
+    top : 50%
+}
