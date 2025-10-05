@@ -21,3 +21,12 @@
     left: 0;
     transition:  transform .8s ease-in-out;
 }
+
+.left-slid > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
