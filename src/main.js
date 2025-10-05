@@ -13,6 +13,13 @@ slidLeft.style.top = `-${(sliderLenght - 1) * 100}vh`
 
 const nextSlide = (params) => {
     const sliderHeight =  sliderContainer.clientHeight;
+
+    if(params === "up") {
+        activeSlideIndex ++;
+        if(activeSlideIndex > sliderLenght - 1){
+            activeSlideIndex = 0
+        }
+    }
 }
 
 downButton.addEventListener("click", () => nextSlide ('up'))
