@@ -44,3 +44,9 @@
     transition: transform .8s ease-in-out;
 
 }
+
+.right-slid > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
