@@ -12,3 +12,12 @@
     width: 10vw;
     height: 100vh;
 }
+
+.left-slid {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  transform .8s ease-in-out;
+}
