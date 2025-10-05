@@ -30,7 +30,10 @@ const nextSlide = (params) => {
     slidRight.style.transform = `translateY(-${
         activeSlideIndex * sliderHeight 
     }px)`
-}
+
+    slidLeft.style.transform = `translateY(-${
+        activeSlideIndex * sliderHeight 
+    }px)`}
 
 downButton.addEventListener("click", () => nextSlide ('up'))
 upButton.addEventListener("click", () => nextSlide ('down'))
