@@ -34,3 +34,13 @@
 .left-slid h1 {
     font-size: 2.5rem;
 }
+
+.right-slid {
+    height: 100%;
+    position: absolute;
+    top : 0;
+    left: 35%;
+    width: 65%;
+    transition: transform .8s ease-in-out;
+
+}
