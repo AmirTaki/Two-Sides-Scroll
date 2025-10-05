@@ -69,3 +69,7 @@ button {
 #down-btn {
     transform: translateX(-100%);
 }
+
+#up-btn {
+    transform: translateY(-100%);
+}
