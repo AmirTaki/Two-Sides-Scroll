@@ -19,6 +19,12 @@ const nextSlide = (params) => {
         if(activeSlideIndex > sliderLenght - 1){
             activeSlideIndex = 0
         }
+        if (params === 'down'){
+            activeSlideIndex --;
+            if(activeSlideIndex < 0){
+                activeSlideIndex = sliderLenght - 1
+            }
+        }
     }
 }
 
